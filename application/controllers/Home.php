@@ -5,6 +5,9 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('list_data');
+		$data['judul'] ='Online Pre-Test | Home';
+		$this->load->view('header', $data);
+		$this->load->view('home');
+		$this->load->view('footer');
 	}
 }
